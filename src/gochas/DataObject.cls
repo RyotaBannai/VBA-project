@@ -2,13 +2,26 @@ VERSION 1.0 CLASS
 BEGIN
   MultiUse = -1  'True
 END
+Attribute VB_Name = "DataObject"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = False
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = False
+VERSION 1.0 CLASS
+BEGIN
+  MultiUse = -1  'True
+End
 Attribute VB_Name = "DateObject"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = False
 Attribute VB_Exposed = False
 Option Explicit
+
 Public value As Date
+
+
+
 Public Sub MsgDate()
   MsgBox value
 End Sub
@@ -28,3 +41,6 @@ End Sub
 Private Sub Class_Terminate()
   Debug.Print "Class Termination:" & value
 End Sub
+
+
+

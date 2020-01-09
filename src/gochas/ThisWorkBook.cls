@@ -6,7 +6,7 @@ Attribute VB_Name = "ThisWorkBook"
 Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
-Attribute VB_Exposed = True
+Attribute VB_Exposed = False
 Private WithEvents c As SheetsCounter
 Attribute c.VB_VarHelpID = -1
 
