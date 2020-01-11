@@ -1,7 +1,7 @@
 Attribute VB_Name = "UseLibrary"
 Option Explicit
 
-Sub mySub()
+Sub MySub()
   VBA.Interaction.Beep
   Debug.Print VBA.DateTime.DateSerial(2000, 10, 0)
   
@@ -23,4 +23,16 @@ Sub MyDic()
     Dim k As String: k = vKey
     Debug.Print k & " = " & dict.Item(k)
   Next
+  
+  Dim i As Long
+  For i = LBound(vKeys) To UBound(vKeys)
+    Debug.Print vKeys(i), dict.Items(i)
+  Next i
+  
+End Sub
+
+Sub LateBinding()
+  'Dim doc As Object
+  'Set doc = GetObject(, "Word.Application")
+  'Debug.Print doc.Name
 End Sub
