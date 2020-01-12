@@ -15,3 +15,11 @@ Sub MytestUseOM()
   Debug.Print Sheet1.Greet
   
 End Sub
+
+Sub MyInstanceOfClass()
+  Dim d As DateObject: Set d = New DateObject
+  Debug.Print d.Value
+  Set d = Nothing
+End Sub
+
+
